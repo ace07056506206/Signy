@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+
+    <title>Signature Verification</title>
+</head>
+<body>
+    <h1 class="title">Signature Verification</h1>
+    <div class="container">
+        <div class="signature-box">
+            <h2>Upload First Signature</h2>
+            <input type="file" id="signatureInput1" accept="image/*">
+            <canvas id="signatureCanvas1" width="400" height="200"></canvas>
+        </div>
+        <div class="signature-box">
+            <h2>Upload Second Signature</h2>
+            <input type="file" id="signatureInput2" accept="image/*">
+            <canvas id="signatureCanvas2" width="400" height="200"></canvas>
+        </div>
+    </div>
+    <div class="center">
+        <button id="verifyButton">Verify Signatures</button>
+    </div>
+    <div id="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <p id="popupMessage"></p>
+        </div>
+    </div>
+
+<script src="../static/script.js"></script>
+
+</body>
+</html>

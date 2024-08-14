@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+/* Gradient background */
+    background-size: cover; /* Prevent background from repeating */
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Center the containers horizontally */
+    margin-top: 50px;
+}
+
+.signature-box {
+    text-align: center;
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin: 0 10px; /* Add spacing between the boxes */
+}
+
+.signature-box input[type="file"] {
+    margin-top: 10px;
+}
+
+canvas {
+    border: 1px solid #000;
+    margin-top: 10px;
+    max-width: 400px; /* Limit the width of the canvas */
+    max-height: 200px; /* Limit the height of the canvas */
+}
+
+.center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 50%;
+    max-width: 400px;
+    position: relative;
+}
+
+.popup-content .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.popup-content p {
+    margin: 0;
+}
+
+.popup-content p.success {
+    color: green; /* Green color for success message */
+    font-weight: bold;
+}
